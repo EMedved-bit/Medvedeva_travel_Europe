@@ -1,0 +1,48 @@
+.page-header {
+  padding: 36px 0 32px;
+  display: flex;
+
+  @media (max-width: $desktop-width) {
+    padding: 0 0 0 21px;
+    align-items: center;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-left: 16px;
+  }
+}
+
+.page-header__logo {
+  margin-right: auto;
+}
+
+.page-header__contacts {
+  margin-left: 70px;
+  display: flex;
+
+  @media (max-width: $desktop-width) {
+    display: none;
+  }
+
+  svg {
+    stroke: $dark;
+    margin-right: 6px;
+  }
+
+  &:hover {
+    color: $peach;
+
+    svg {
+      stroke: $peach;
+    }
+  }
+}
+
+.page-header__contacts-link {
+  font-size: 18px;
+  color: $dark;
+
+  &:hover {
+    color: $peach;
+  }
+}

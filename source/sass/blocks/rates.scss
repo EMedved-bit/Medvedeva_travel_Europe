@@ -1,0 +1,139 @@
+.rates {
+  padding: 30px;
+  padding-top: 40px;
+  border: 1px solid rgba($light-dark, 0.3);
+  border-radius: 6px;
+  width: 370px;
+  margin-right: 30px;
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: $desktop-width) {
+    padding: 30px 20px 0;
+    width: 288px;
+    margin-right: 50px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom: none;
+
+    &:first-child {
+      order: 2;
+      margin-right: 0;
+    }
+
+    &:last-child {
+      order: 1;
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    &:last-child {
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+  }
+
+  &:hover {
+    border: 3px solid $peach;
+    margin-top: -2px;
+
+    .rates__type {
+      color: $peach;
+    }
+
+    .rates__intro {
+      border-bottom: 1px solid rgba($peach, 0.5);
+    }
+
+    .rates__features-item {
+      &::before {
+        content: "";
+        background-image: url("../images/check-black.svg");
+      }
+    }
+  }
+}
+
+.rates__type {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgba($dark, 0.7);
+
+  @media (max-width: $desktop-width) {
+    flex-direction: column;
+  }
+}
+
+.rates__name {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 38px;
+
+  @media (max-width: $desktop-width) {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+}
+
+.rates__price {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 34px;
+}
+
+.rates__intro {
+  margin: 0;
+  line-height: 24px;
+  margin-top: 36px;
+  padding-bottom: 27px;
+  border-bottom: 1px solid rgba($light-dark, 0.3);
+
+  @media (max-width: $desktop-width) {
+    margin-top: 11px;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+}
+
+.rates__features-list {
+  margin: 0;
+  margin-top: 29px;
+  padding: 0;
+  list-style: none;
+
+  @media (max-width: $desktop-width) {
+    margin-top: 20px;
+  }
+}
+
+.rates__features-item {
+  line-height: 32px;
+  display: flex;
+  margin-bottom: 15px;
+
+  @media (max-width: $desktop-width) {
+    margin-bottom: 10px;
+  }
+
+  &::before {
+    content: "";
+    background-image: url("../images/check-peach.svg");
+    width: 14px;
+    height: 12px;
+    flex-shrink: 0;
+    margin-top: 10px;
+    margin-right: 16px;
+  }
+}
+
+.rates__form-button {
+  width: 100%;
+  margin-top: auto;
+
+  @media (max-width: $desktop-width) {
+    width: auto;
+    margin-left: -21px;
+    margin-right: -21px;
+  }
+}

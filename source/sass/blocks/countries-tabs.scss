@@ -1,0 +1,137 @@
+.countries-tabs {
+  width: 899px;
+  padding-top: 24px;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 233px;
+
+  @media (max-width: $desktop-width) {
+    width: 100%;
+    padding-top: 95px;
+    margin-bottom: 111px;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-top: 40px;
+  }
+
+  &::before {
+    content: "";
+    background-image: url("../images/map.svg");
+    width: 1444px;
+    height: 1089px;
+    position: absolute;
+    top: 140px;
+    left: -137px;
+    z-index: -1;
+
+    @media (max-width: $desktop-width) {
+      display: none;
+    }
+  }
+}
+
+.countries-tabs__buttons-list {
+  padding: 0;
+  padding-bottom: 12px;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba($light-dark, 0.3);
+
+  @media (max-width: $desktop-width) {
+    margin-left: 21px;
+    overflow: auto;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-bottom: 15px;
+    margin-left: 16px;
+  }
+}
+
+.countries-tabs__button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: rgba($light-dark, 0.3);
+
+  @media (max-width: $desktop-width) {
+    margin-right: 100px;
+  }
+
+  &--active {
+    color: $peach;
+  }
+}
+
+.countries-tabs__content {
+  display: flex;
+  margin-top: 65px;
+
+  @media (max-width: $desktop-width) {
+    flex-direction: column;
+    margin-top: 0;
+  }
+}
+
+.countries-tabs__content-wrapper {
+  width: 355px;
+  margin-right: 100px;
+
+  @media (max-width: $desktop-width) {
+    width: 100%;
+    padding: 30px 21px;
+    margin: 0 auto;
+
+    .countries-tabs__content-title {
+      text-align: center;
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    padding: 24px 16px 50px;
+  }
+}
+
+.countries-tabs__content-text {
+  color: rgba($light-dark, 0.7);
+  margin: 30px 0 50px;
+
+  @media (max-width: $desktop-width) {
+    text-align: center;
+    margin: 20px 0;
+  }
+}
+
+.countries-tabs__form-button {
+  width: 275px;
+
+  @media (max-width: $desktop-width) {
+    width: 250px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 288px;
+  }
+}
+
+.countries-tabs__image {
+  display: flex;
+
+  @media (max-width: $desktop-width) {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  @media (max-width: $tablet-width) {
+    height: 415px;
+  }
+}

@@ -1,0 +1,40 @@
+.contacts {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  @media (max-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.contacts__item {
+  display: flex;
+  margin-bottom: 19px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.contacts__icon-email {
+  fill: $light-grey;
+  margin-right: 15px;
+}
+
+.contacts__icon-phone {
+  stroke: $light-grey;
+  margin-right: 11px;
+}
+
+.contacts__link {
+  font-size: 14px;
+  color: $peach;
+  display: block;
+
+  &--font-size {
+    font-size: 16px;
+  }
+}

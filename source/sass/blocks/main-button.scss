@@ -1,0 +1,25 @@
+.main-button {
+  height: 75px;
+  background-color: $peach;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: $white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: inherit;
+  padding: 0;
+  border: none;
+
+  @media (max-width: $desktop-width) {
+    height: 50px;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  &:hover,
+  &:active {
+    background-color: $orange;
+  }
+}

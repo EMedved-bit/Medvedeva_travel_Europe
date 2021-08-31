@@ -1,0 +1,21 @@
+.page {
+  height: 100%;
+  background-color: $white;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.page__body {
+  font-family: "Montserrat", "Helvetica", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  color: $light-dark;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 15px;
+
+  @media (max-width: $desktop-width) {
+    padding: 0;
+  }
+}
