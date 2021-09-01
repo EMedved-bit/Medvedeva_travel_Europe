@@ -71,12 +71,16 @@
 }
 
 .countries-tabs__content {
-  display: flex;
+  display: none;
   margin-top: 65px;
 
   @media (max-width: $desktop-width) {
     flex-direction: column;
     margin-top: 0;
+  }
+
+  &--active {
+    display: flex;
   }
 }
 

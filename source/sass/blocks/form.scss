@@ -25,6 +25,10 @@
   justify-content: space-between;
   position: relative;
 
+  @media (max-width: $desktop-width) {
+    margin: 0 auto;
+  }
+
   @media (max-width: $tablet-width) {
     flex-direction: column;
     align-items: center;
@@ -69,6 +73,10 @@
     line-height: 17px;
     color: $dark;
   }
+
+  &--error {
+    border: 1px solid $peach;
+  }
 }
 
 .form__button {
@@ -83,6 +91,6 @@
   }
 
   @media (max-width: $tablet-width) {
-    width: 100%;
+    width: 288px;
   }
 }
